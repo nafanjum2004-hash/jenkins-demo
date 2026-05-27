@@ -25,7 +25,7 @@ pipeline {
     steps {
         sh 'sudo cp -r * /var/www/html/'
     }
-        }
+}
     }
 }
 

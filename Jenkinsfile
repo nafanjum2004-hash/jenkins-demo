@@ -22,9 +22,10 @@ pipeline {
         }
 
         stage('Deploy') {
-            steps {
-                echo 'Deploying Project...'
-            }
+    steps {
+        sh 'sudo cp -r * /var/www/html/'
+    }
         }
     }
 }
+
